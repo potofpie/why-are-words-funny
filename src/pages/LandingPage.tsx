@@ -25,7 +25,7 @@ export const LandingPage = ({setPage}: PageProps)  => {
         <Title> Why are words <b><i>funny</i></b>? </Title>
         <Bottom>
           <Description> 
-          Words can be interperted as <b><i>funny</i></b> regardless of thiere meaning. I am trying to collection <b><i>data</i></b> about what makes these words <b><i>funny</i></b>!
+          Words can be interperted as <b><i>funny</i></b> regardless of thier meaning. I am trying to collection <b><i>data</i></b> about what makes these words <b><i>funny</i></b>!
         </Description>
         <ButtonContainer onClick={() => setPage('choice')}>
           <ButtonLink >

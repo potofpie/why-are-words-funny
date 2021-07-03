@@ -14,6 +14,8 @@ export const renderPage = (page: string, setPage: Function) => {
       return <RateTheWord setPage={setPage}/>
     case 'choice':
       return <ChoiceTheWord setPage={setPage}/>
+    default:
+      return <div>error</div>
   }
 }
 

@@ -6,6 +6,9 @@ import {
   ButtonLink,
 } from '../components'
 import {
+  TestPageContainer
+} from './'
+import {
   useSpring
 } from 'react-spring'
 import {
@@ -26,29 +29,31 @@ export const ChoiceTheWord = ({setPage}: PageProps)  => {
 
 
   return  (
-    <AppContainer >
-      <Description>
-        Please choose the word that you think is funnier!
-      </Description>
-      <div>
+    <TestPageContainer>
+      <AppContainer >
+        <Description>
+          Please choose the word that you think is funnier!
+        </Description>
+        <div>
 
-        <ButtonContainer onClick={() => setChoice('word 1')}>
-          <ButtonLink style={{textDecoration: 'word 1' ===  choice ?   'underline' : 'none' }}>
-            word 1
-          </ButtonLink> 
-        </ButtonContainer>
-        <ButtonContainer onClick={() => setChoice('word 2')}>
-          <ButtonLink style={{textDecoration: 'word 2' ===  choice ?   'underline' : 'none' }}>
-            word 2
-          </ButtonLink> 
-        </ButtonContainer>
-      </div>
-      {choice.length !== 0 && <ButtonContainer style={fadeStyles}>
-          <ButtonLink>
-            Submit
-          </ButtonLink>
-        </ButtonContainer>}
-    </AppContainer>
+          <ButtonContainer onClick={() => setChoice('word 1')}>
+            <ButtonLink style={{textDecoration: 'word 1' ===  choice ?   'underline' : 'none' }}>
+              word 1
+            </ButtonLink> 
+          </ButtonContainer>
+          <ButtonContainer onClick={() => setChoice('word 2')}>
+            <ButtonLink style={{textDecoration: 'word 2' ===  choice ?   'underline' : 'none' }}>
+              word 2
+            </ButtonLink> 
+          </ButtonContainer>
+        </div>
+        {choice.length !== 0 && <ButtonContainer style={fadeStyles}>
+            <ButtonLink>
+              Submit
+            </ButtonLink>
+          </ButtonContainer>}
+      </AppContainer>
+    </TestPageContainer>
   );
   ;
 }

@@ -8,6 +8,9 @@ import {
   Description
 } from '../components'
 import {
+  TestPageContainer
+} from './'
+import {
   useSpring
 } from 'react-spring'
 import {
@@ -34,18 +37,21 @@ export const RateTheWord = ({setPage}: PageProps) => {
   });
 
   return  (
-    <AppContainer>
-      <Description>
-        Rate the funniness of this word!
-      </Description>
-        <Title> the word </Title>
-        <RatingSlider min={-100} marks={marks} max={100} defaultValue={0}  value={rating} onChange={(e: any, v: any) => setRating(v) }/>
-        {rating !== 0 && <ButtonContainer style={fadeStyles}>
-          <ButtonLink>
-            Submit
-          </ButtonLink>
-        </ButtonContainer>}
-    </AppContainer>
+      <TestPageContainer>
+        <AppContainer>
+
+          <Description>
+            Rate the funniness of this word!
+          </Description>
+            <Title> the word </Title>
+            <RatingSlider min={-100} marks={marks} max={100} defaultValue={0}  value={rating} onChange={(e: any, v: any) => setRating(v) }/>
+            {rating !== 0 && <ButtonContainer style={fadeStyles}>
+              <ButtonLink>
+                Submit
+              </ButtonLink>
+            </ButtonContainer>}
+        </AppContainer>
+      </TestPageContainer>
   );
   
 }

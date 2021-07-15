@@ -1,11 +1,11 @@
 from fireo import models as mdl
-from fireo.fields import TextField, DateTime, ReferenceField, NumberField
+from fireo.fields import TextField, DateTime, ReferenceField, NumberField, IDField
  
 
 
 class Participants(mdl.Model):
-    aid = TextField()
-    # created = DateTime()
+    aid = IDField()
+    created = DateTime()
 
 class Tests(mdl.Model):
     type = TextField()

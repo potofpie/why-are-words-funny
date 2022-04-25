@@ -12,9 +12,27 @@
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/laughing.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto&family=Share+Tech+Mono&display=swap" rel="stylesheet">    <title>Why are words funny?</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyB0-pS_Xsh3gGDI_NFR42YNP2fP9zgQGY0",
+        authDomain: "why-are-words-funny.firebaseapp.com",
+        projectId: "why-are-words-funny",
+        storageBucket: "why-are-words-funny.appspot.com",
+        messagingSenderId: "676758826972",
+        appId: "1:676758826972:web:f33f513d5110a9e998e919",
+        measurementId: "G-DHFBRN291Z"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+    <title>Why are words funny?</title>
   </head>
   <body>
     <!-- <noscript>You need to enable JavaScript to run this app.</noscript> -->
